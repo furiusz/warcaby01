@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initiale-scale=1">
+        <title>Gra internetowa - warcaby</title>
+        <link rel="stylesheet" type="text/css" href="/PWI/css/style.css">
+    </head>
+    <body>
+        <header>
+                <img alt="Logo" src="/PWI/media/logo.png" width="100px" height="100px">
+            <h1>Warcaby online</h1>
+            <ul>
+                <li><a href="/PWI/html/index.html">HOME</a></li>
+                <li><a href="/PWI/html/logowanie.html" class="active">Logowanie</a></li>
+                <li><a href="/PWI/html/zasady.html">Zasady gry</a></li>
+            </ul>
+        </header>
+        <section class="signup-inline">
+            <h2>Witaj w grze warcaby zaloguj się na swoje konto. Jeśli nie masz konta załóż je za darmo:</h2>
+            <div class="signup">
+                <div class="signup-form">
+                    <form class="signup-form-full" action="/PWI/php/zaloguj.php" method="post">
+                        <div>
+                            <label for="email" class="signup-inline-label">Email</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" placeholder="Podaj adres email">
+                        </div>
+                        <div>
+                            <label for="password" class="signup-inline-label">Hasło</label>
+                        </div>
+                        <div>
+                            <input type="password" name="password" placeholder="Podaj hasło">
+                        </div>
+                        <br>
+                        <input class="submit-button" type="submit" name="submit" value="Zaloguj">
+                    </form>
+                    
+                </div>
+                <div> Nie masz konta <br><a href="rejestracja.html"> Zarejestruj się</a></div>
+            </div>
+        </section>
+    </body>
+</html>

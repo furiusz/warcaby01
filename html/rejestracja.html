@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pl">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initiale-scale=1">
+        <title>Gra internetowa - warcaby</title>
+        <link rel="stylesheet" type="text/css" href="/PWI/css/style.css">
+    </head>
+    <body>
+        <header>
+                <img alt="Logo" src="/PWI/media/logo.png">
+            <h1>Warcaby online</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rejestracja.html" class="active">Rejestracja</a></li>
+                <li><a href="zasady.html">Zasady gry</a></li>
+            </ul>
+        </header>
+        <section class="signup-inline">
+        <h2>Witaj w grze warcaby zaloguj się na swoje konto lub jeśli nie masz załóż je za darmo:</h2>
+            <div class="signup">
+                <div class="signup-form">
+                    <form class="signup-form-full" action="/PWI/php/zarejestruj.php" method="post">
+                        <div>
+                            <label for="email" class="signup-inline-label">Email</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" placeholder="Podaj adres email">
+                        </div>
+                        <div>
+                            <label for="password" class="signup-inline-label">Hasło</label>
+                        </div>
+                        <div>
+                            <input type="password" name="password" placeholder="Podaj hasło">
+                        </div>
+                        <div>
+                            <label for="password-repeat"class="signup-inline-label">Powtórz hasło</label>
+                        </div>
+                        <div>
+                            <input type="password" name="password-repeat" placeholder="Podaj ponownie hasło">
+                        </div>
+
+                        <br>
+                        <input class="submit-button" type="submit" name="submit" value="Zarejestruj">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
